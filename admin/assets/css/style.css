@@ -1,0 +1,367 @@
+body{
+  font-family: Nunito !important;
+  position: relative;
+  background-color: #eeeeee26;
+}
+@font-face {
+  font-family: Nunito;
+  src: url(../css/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Neo;
+  src: url(../css/NeoSansArabic.ttf);
+}
+
+body::-webkit-scrollbar {
+width: 16px; 
+}
+
+body::-webkit-scrollbar-track {
+background: #eeeeeeba; 
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: #ddd;  
+border-radius: 20px;  
+border: 1px solid #ddd; 
+} 
+.side-navbar::-webkit-scrollbar {
+width: 2px; 
+}
+
+.side-navbar::-webkit-scrollbar-track {
+background: #eeeeeeba; 
+}
+
+.side-navbar::-webkit-scrollbar-thumb {
+background-color: #ddd;  
+border-radius: 20px;  
+border: 1px solid #ddd; 
+} 
+/*custom*/
+.ar_name {font-family: Neo;}
+.name {font-size: 16px;}
+.contain {
+  /* display: block; */
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 60px !important;
+}
+
+/* Hide the browser's default checkbox */
+.contain input {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  cursor: pointer;
+  height: 25px !important;
+  width: 25px !important;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.contain:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.contain input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.contain input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.contain .checkmark:after {
+  left: 10px;
+  top: 7px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+input:focus , button:focus {outline: none !important;box-shadow: none !important;}
+.title {
+  position: relative;
+  color: #5491f2;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: left;
+}
+.title img {width: 30px;}
+.pd {padding: 40px 0;}
+:root {
+  --main-color :#B71103;
+  --sub-color :#253761;
+  --sec-color1 :#457B9D;
+  --sec-color2 :#A8DADC;
+}
+.text-valid {font-size: small;margin-top: 5px;}
+select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url(../images/arrow.png) !important;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: right 14px center;
+  color: #777 !important;
+}
+.file {
+  position: relative;
+  display: flex;
+  align-items: center;
+  }
+  
+  .file > input[type='file'] {
+  display: none
+  }
+  
+  .file > label {
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  outline: 0;
+  user-select: none;
+  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  background-color: hsl(204, 86%, 96%);
+  color: hsl(0, 0%, 29%);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .file > label:hover {
+  border-color: hsl(0, 0%, 21%);
+  }
+  
+  .file > label:active {
+  background-color: hsl(0, 0%, 96%);
+  }
+  
+  .file > label > i {
+  padding-right: 5px;
+  }
+  .file--upload > label {
+  color: var(--sec-color1) !important;
+  border-color: hsl(204, 86%, 53%);
+  }
+  
+  .file--upload > label:hover {
+  border-color: hsl(204, 86%, 53%);
+  background-color: hsl(204, 86%, 96%);
+  }
+  
+  .file--upload > label:active {
+  background-color: hsl(204, 86%, 91%);
+  }
+
+/* global style */
+/* table */
+.table {margin: 25px 0px 20px 0;background-color: #fff;box-shadow: 0px 2px 4px 0px #ddd;}
+.table thead th ,
+.table tbody th,
+.table tbody td
+{text-align: center;vertical-align: middle;}
+.table a {color: #fff !important;}
+.table .thead-dark th {border-color: var(--sub-color);background-color: var(--sub-color);}
+.table img {width: 50px;border-radius: 50%;height: 50px;}
+/* add */
+.add form {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 20px 0;
+  box-shadow: 0px 2px 4px 0px #ddd;
+}
+.add form label {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--sub-color);
+}
+.add form input, .add form textarea,.add form input, .add form select {
+  display: block;
+  background-color: #fdfdfdad;
+  border: 1px solid var(--sec-color2);
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 100%;
+  padding-left: 10px;
+}
+.add form input, .add form select {
+  height: 40px;
+}
+.add form input:focus, .add form textarea:focus, .add form select:focus {outline: none;}
+.add form button {
+  background-color: #2196F3;
+  color: #fff;
+  border-radius: 25px;
+  padding: 7px 30px;
+  cursor: pointer;
+  border: none;
+}
+/* side navbar */
+.side-navbar {
+  position: fixed;
+  left: 0;
+  top: 0px;
+  height: 100%;
+  width: 220px;
+  z-index: 888;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all .5s ease-in-out;
+  background-color: #2076FF;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px 0px rgba(51, 51, 51, 0.128);
+}
+.side-navbar .user {margin: 30px 0 10px;}
+.side-navbar  .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 23px;
+  font-size: 27px;
+  margin-left: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+.side-navbar hr {margin: 0;border-color: #ffffff3d;}
+.user img {
+  width: 60px;
+  margin: auto;
+  display: block;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.user b {color: #fff;display: block;text-align: center;margin-top: 10px;}
+.links ul {
+  margin-top: 0px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.links ul li {
+  margin: 2px 0;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.links ul li img {width: 17px;margin-right: 9px;}
+.links ul li i.fa-angle-down {float: right;margin-top: 5px;width: auto;}
+.links ul li > a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  padding: 8px 10px 7px;
+  border-radius: 5px;
+  border-left: 2px solid transparent;
+  color: #fff;
+}
+.logout {display: flex;align-items: center;align-content: center;justify-content: center;}
+.links ul li a.active {background-color: #055ff0;border-left: 2px solid #fff;box-shadow: 0px 2px 3px 0px #1156c5;}
+/* .links ul li > a:hover {color: var(--main-color) !important;} */
+.links .drop-link {
+  padding: 5px 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: none;
+  background-color: rgba(238, 238, 238, 0.306);
+}
+.drop-link a {
+  font-size: 14px;
+  color: var(--sec-color1) !important;
+  display: block;
+  margin: 3px 0;
+  text-decoration: none;
+}
+.shadow {
+  box-shadow: 0 .2rem .2rem rgba(0,0,0,.15)!important;
+}
+.welcome .card i {
+  position: absolute;
+  left: 17px;
+  bottom: 31px;
+  font-size: 20px;
+}
+/* content wrapp */
+#main {
+  transition: all .5s ease-in-out;
+  margin-left: 220px;
+}
+
+.view-card {text-align: center;position: relative;border-radius: 10px;}
+.view-card .tag {
+  position: absolute;
+    top: -27px;
+    left: 10px;
+    background-color: #ff7956;
+    color: #fff;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: small;
+}
+.view-card .img {
+margin: 10px auto 20px;
+}
+.view-card .img img {width: auto;max-height: 80px;margin: auto;display: block;}
+.view-card .round {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    font-size: small;
+    padding: 0;
+    border: none;
+}
+.view-card h5 {color: #ff7756;}
+.flex-div {
+    display: flex;
+justify-content: space-around;
+width: 73%;
+margin: 20px auto;
+}
+
+@media(max-width:768px) {
+  #main {margin-left: 0 !important;}
+  #mySidenav {width: 0px;}
+}

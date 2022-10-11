@@ -1,0 +1,25 @@
+-1 ## carousel parallax
+-2 animation [done]
+-3 dark mode [done]
+-4 multiple langs [done]
+-5 alertify rtl & download library files [done]
+-6 ## sweet alert lang
+-7 loading overlay lottie files [done]
+-8 ## forgot password [send email]
+-9 ## remember me
+-10 ## try to make register oop
+-11 ## wishlist
+-12 ## multiple images for product [main and sub]
+-13 ## update my account
+-14 bootstrap classes rtl [done]
+-15 ar file css [done]
+-16 filter products [done]
+-17 ## celebrity image for place orders
+-18 sign up [done]
+-19 class active dashboard [done]
+-20 show more in index and products [done]
+-21 ## pagination
+-22 related products [done]
+-23 remove session message from home page [done]
+-24 burger icon - body margin [done]
+-25 form header section [done]
